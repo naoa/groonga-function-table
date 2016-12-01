@@ -1,0 +1,20 @@
+register functions/table
+
+table_create Synonyms TABLE_HASH_KEY ShortText
+column_create Synonyms name COLUMN_SCALAR ShortText
+column_create Synonyms num COLUMN_SCALAR Int32
+
+load --table Synonyms
+[
+{"_key": "groonga", "name": "Search engine", "num": 3}
+]
+
+table_create Entries TABLE_NO_KEY
+column_create Entries title COLUMN_SCALAR ShortText
+
+load --table Entries
+[
+{"title": "groonga"}
+]
+
+select Entries --output_columns 'table_get_value(Synonyms, "num", title)'
