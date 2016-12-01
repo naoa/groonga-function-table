@@ -1,4 +1,4 @@
-register functions/table
+plugin_register functions/table
 
 table_create Synonyms TABLE_HASH_KEY ShortText
 column_create Synonyms name COLUMN_SCALAR ShortText

@@ -13,7 +13,7 @@ table_get_value(table_name, "output_column", key_value)
 * key_value: 検索するテーブルのキーの値を指定します。
 
 ```bash
-register functions/table
+plugin_register functions/table
 [[0,0.0,0.0],true]
 table_create Synonyms TABLE_HASH_KEY ShortText
 [[0,0.0,0.0],true]
@@ -53,7 +53,7 @@ Build this function.
 Register `functions/table`:
 
     % groonga DB
-    > register functions/table
+    > plugin_register functions/table
 
 Now, you can use table related functions
 

@@ -1,4 +1,4 @@
-register functions/table
+plugin_register functions/table
 [[0,0.0,0.0],true]
 table_create Synonyms TABLE_HASH_KEY ShortText
 [[0,0.0,0.0],true]
